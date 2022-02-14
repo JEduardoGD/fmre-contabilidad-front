@@ -31,10 +31,8 @@
                 <div class="row mb-3">
                     <label for="inputEmail3" class="col-sm-2 col-4 col-form-label">Banco</label>
                     <div class="col-sm-10 col-8">
-                        <select class="form-select">
-                            <option>Select</option>
-                            <option>Large select</option>
-                            <option>Small select</option>
+                        <select class="form-select" [(ngModel)]="selectedBanco">
+                            <option *ngFor='let banco of bancos'>{{banco.descripcion}}</option>
                         </select>
                     </div>
                 </div>

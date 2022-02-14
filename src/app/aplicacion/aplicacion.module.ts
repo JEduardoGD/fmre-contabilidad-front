@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { AplicacionRoutingModule } from './aplicacion-routing.module';
 import { CapturaMovimientoComponent } from './captura-movimiento/captura-movimiento.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { CapturaMovimientoComponent } from './captura-movimiento/captura-movimie
   ],
   imports: [
     CommonModule,
-    AplicacionRoutingModule
+    AplicacionRoutingModule,
+    FormsModule
   ]
 })
 export class AplicacionModule { }
